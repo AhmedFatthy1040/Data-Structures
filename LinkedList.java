@@ -49,4 +49,22 @@ public class LinkedList {
         }
         length++;
     }
+    public Node removeLast() {
+        if (length == 0)
+            return null;
+        Node temp = this.head;
+        Node pre = this.head;
+        while (temp.next != null) {
+            pre = temp;
+            temp = temp.next;
+        }
+        this.tail = pre;
+        this.tail.next = null;
+        length--;
+        if (length == 0) {
+            this.head = null;
+            this.tail = null;
+        }
+        return temp;
+    }
 }
