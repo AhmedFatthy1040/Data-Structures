@@ -6,6 +6,7 @@ public class Main {
         LL.append(8);
         LL.append(1);
         LL.insert(2, 6);
+        LL.reverse();
         LL.printLinkedList();
     }
 }
