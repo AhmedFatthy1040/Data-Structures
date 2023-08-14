@@ -9,6 +9,7 @@ public class Main {
         System.out.println("Length of Linked List is : " + LL.getLength());
         LL.printLinkedList();
         System.out.println(LL.removeLast().value);
+        LL.prepend(12);
         LL.printLinkedList();
 
     }
