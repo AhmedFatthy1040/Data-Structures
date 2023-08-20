@@ -1,8 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        DoublyLinkedList DLL = new DoublyLinkedList(1);
-        DLL.append(2);
-        DLL.removeLast();
-        DLL.printDoublyLinkedList();
+        Stack s = new Stack(1);
+        s.push(6);
+        s.push(3);
+        s.push(7);
+        s.push(5);
+        s.pop();
+        s.printStack();
+        s.getTop();
+        s.getHeight();
     }
 }
