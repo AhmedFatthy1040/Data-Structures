@@ -32,4 +32,16 @@ public class Queue {
     public void getLength() {
         System.out.println("Length: " + length);
     }
+    public void enqueue(int value) {
+        Node n = new Node(value);
+        if (length == 0) {
+            first = n;
+            last = n;
+        }
+        else {
+            last.next = n;
+            last = n;
+        }
+        length++;
+    }
 }

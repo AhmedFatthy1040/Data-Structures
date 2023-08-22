@@ -1,13 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        Stack s = new Stack(1);
-        s.push(6);
-        s.push(3);
-        s.push(7);
-        s.push(5);
-        s.pop();
-        s.printStack();
-        s.getTop();
-        s.getHeight();
+        Queue q = new Queue(6);
+        q.enqueue(7);
+        q.enqueue(2);
+        q.printQueue();
     }
 }
