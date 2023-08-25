@@ -13,5 +13,30 @@ public class BinarySearchTree {
 //    public BinarySearchTree(int value) {
 //        root = null;
 //    }
-
+    public  boolean insert(int value) {
+        Node n = new Node(value);
+        if (root == null) {
+            root = n;
+            return true;
+        }
+        Node temp = root;
+        while (true) {
+            if (n.value == temp.value)
+                return false;
+            if (n.value < temp.value) {
+                if (temp.left == null) {
+                    temp.left = n;
+                    return true;
+                }
+                temp = temp.left;
+            }
+            else {
+                if (temp.right == null) {
+                    temp.right = n;
+                    return true;
+                }
+                temp = temp.right;
+            }
+        }
+    }
 }
