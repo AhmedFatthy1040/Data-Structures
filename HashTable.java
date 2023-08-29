@@ -32,4 +32,16 @@ public class HashTable {
         }
         return hash;
     }
+    public void set(String key, int value) {
+        int index = hash(key);
+        Node n = new Node(key, value);
+        if (dataMap[index] == null)
+            dataMap[index] = n;
+        else {
+            Node temp = dataMap[index];
+            while (temp.next != null)
+                temp = temp.next;
+            temp.next = n;
+        }
+    }
 }

@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        Queue q = new Queue(6);
-        q.enqueue(7);
-        q.enqueue(2);
-        q.dequeue();
-        q.printQueue();
+        HashTable ht = new HashTable();
+        ht.set("first", 5);
+        ht.set("second", 7);
+        ht.set("third", 1);
+        ht.printTable();
     }
 }
