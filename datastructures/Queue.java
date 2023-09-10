@@ -1,3 +1,5 @@
+package datastructures;
+
 public class Queue {
     private Node first;
     private Node last;

@@ -1,3 +1,5 @@
+package datastructures;
+
 import javax.lang.model.util.Elements;
 
 public class BinarySearchTree {
@@ -12,7 +14,7 @@ public class BinarySearchTree {
         }
     }
     // Didn't make a constructor because the root automatically will be assigned to null.
-//    public BinarySearchTree(int value) {
+//    public datastructures.BinarySearchTree(int value) {
 //        root = null;
 //    }
     public  boolean insert(int value) {

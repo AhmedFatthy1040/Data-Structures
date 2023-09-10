@@ -1,3 +1,5 @@
+package algorithms;
+
 public class MergeSort {
     public static int[] merge(int[] arr1, int[] arr2) {
         int[] combined = new int[arr1.length + arr2.length];
