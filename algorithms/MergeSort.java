@@ -1,5 +1,7 @@
 package algorithms;
 
+import java.util.Arrays;
+
 public class MergeSort {
     public static int[] merge(int[] arr1, int[] arr2) {
         int[] combined = new int[arr1.length + arr2.length];
@@ -26,5 +28,18 @@ public class MergeSort {
             k++;
         }
         return combined;
+    }
+    public static int[] mergeSort(int[] arr) {
+        if (arr.length == 1)
+            return arr;
+        int midIndex = arr.length / 2;
+        int[] left = mergeSort(Arrays.copyOfRange(arr, 0, midIndex));
+        int[] right = mergeSort(Arrays.copyOfRange(arr, midIndex, arr.length));
+        return merge(left, right);
+    }
+    public static void main(String[] args) {
+        int[] ary = {9, 4, 6, 1, 8, 7};
+        int[] sortedAry = mergeSort(ary);
+        System.out.println(Arrays.toString(sortedAry));
     }
 }
