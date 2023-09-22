@@ -13,6 +13,6 @@ public class Main {
         bst.insert(52);
         bst.insert(82);
 
-        System.out.println(bst.DFSPostOrder());
+        System.out.println(bst.DFSInOrder());
     }
 }
